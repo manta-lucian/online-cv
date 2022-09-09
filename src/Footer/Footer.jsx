@@ -37,12 +37,12 @@ const Footer = React.forwardRef((props, ref) => {
         <ul className="contact__list">
           <li className="contact__item">
             <a href="#">
-              <FaEnvelope /> lucian.ionut.manta@gmail.com
+              <FaEnvelope /> lucian.i*************
             </a>
           </li>
           <li className="contact__item">
             <a href="#">
-              <FaPhone /> 0741411319
+              <FaPhone /> 0741******
             </a>
           </li>
           <li className="contact__item">
