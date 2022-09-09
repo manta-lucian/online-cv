@@ -1,0 +1,41 @@
+.hero-content-button-container {
+    display: flex;
+}
+
+.hero-content__information {
+    font-size: 2rem;
+}
+
+
+
+.hero-content-paragraph-container {
+    width: 50rem;
+}
+
+.hero-content__introduction-name {
+    font-size: 6rem;
+}
+
+.hero-content__introduction {
+    font-size: 4.5rem;
+}
+
+
+.hero-content__greet {
+    font-size: 2.5rem;
+}
+
+
+.button {
+    font-size: 3rem;
+}
+
+
+
+
+
+
+
+
+
+

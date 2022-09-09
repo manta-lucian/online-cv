@@ -1,0 +1,218 @@
+.about-container {
+  position: relative;
+  grid-area: about;
+  display: grid;
+  row-gap: 10rem;
+  grid-template-columns: repeat(12, 1fr);
+  position: relative;
+  background-image: linear-gradient(to right, $color-black-six, $color-black-six), url("src/imgs/bg-fixed.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 20rem 0 25rem 0;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 65% 85%, 50% 100%, 50% 100%, 35% 85%, 0 85%);
+}
+
+.about-left-side-container {
+  position: relative;
+  grid-column: 2/5;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem;
+  gap: 1rem;
+  color: white;
+}
+
+.about-img {
+  width: 150px;
+  height: 150px;
+  background-image: url("src/imgs/anon-img.jpg");
+  background-size: cover;
+  border-radius: 50%;
+  margin-top: 5rem;
+}
+
+.about-name {
+  font-size: $big-plus-font-size;
+  color: $color-secondary;
+}
+
+.about-position {
+  font-size: $medium-font-size;
+}
+
+.about-resume-button {
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  font-size: $big-font-size;
+}
+
+.vertical-line-divider {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  width: 3px;
+  height: 300px;
+  background-color: $color-primary;
+  box-shadow: 0px 0px 1rem 3px $color-primary;
+  animation: glow 2s infinite;
+}
+
+.about-right-side-container {
+  grid-column: 5/12;
+  padding: 2rem;
+  padding-left: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4rem;
+  color: white;
+}
+
+.about-head-title {
+  font-size: $extra-large-font-size;
+  box-shadow: 0 0.5rem 0 0 $color-primary;
+  width: 350px;
+  text-align: center;
+  color: $color-secondary;
+}
+
+.about-description-c {
+  font-size: $medium-plus-font-size;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3;
+}
+
+.about-description-c__content--3 {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+////RESPONSIVE////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media only screen and (max-width: 1350px) {
+  .about-description-c {
+    font-size: 2.2rem;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .about-container {
+    padding-top: 10rem;
+  }
+
+  .about-right-side-container {
+    grid-column: 5/-1;
+  }
+
+  .about-left-side-container {
+    grid-column: 1/5;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .about-description-c {
+    font-size: 2rem;
+  }
+
+  .about-head-title {
+    font-size: 5.5rem;
+    width: 300px;
+  }
+
+  .about-name {
+    font-size: 3.3rem;
+  }
+
+  .about-resume-button {
+    font-size: 2rem;
+    padding: 2rem 4rem;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .about-container {
+    grid-template-areas:
+      "a a a a a a a a a a a a"
+      "b b b b b b b b b b b b";
+    row-gap: 0;
+    padding-top: 0;
+  }
+
+  .about-head-title {
+    font-size: 5.5rem;
+    box-shadow: 0 0.5rem 0 0 #5680e9;
+    width: 300px;
+    text-align: none;
+    color: #5abaea;
+    align-self: self-start;
+  }
+
+  .about-right-side-container {
+    grid-column: 5/-1;
+    grid-area: b;
+    padding: 0 2rem 2rem 0;
+    padding-left: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4rem;
+    color: white;
+    margin-top: 5rem;
+  }
+
+  .about-left-side-container {
+    position: relative;
+    grid-column: 1/5;
+    grid-area: a;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem;
+    gap: 1rem;
+    color: white;
+  }
+
+  .vertical-line-divider {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 3px;
+    background-color: #5680e9;
+    box-shadow: 0px 0px 1rem 3px #5680e9;
+    animation: glow 2s infinite;
+  }
+
+  .about-resume-button {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    padding: 2rem 4rem;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .about-head-title {
+    font-size: 4.5rem;
+    box-shadow: 0 0.5rem 0 0 #5680e9;
+    width: 250px;
+    color: #5abaea;
+    align-self: self-start;
+  }
+
+  .about-description-c {
+    font-size: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+  }
+}

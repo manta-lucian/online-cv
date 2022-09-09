@@ -1,0 +1,4 @@
+.hero-content__introduction-name {
+    font-size: 8rem;
+    color: #5abaea;
+}

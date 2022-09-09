@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Eminem",
+    "image": "assets/src/imgs/eminem.jpg",
+    "url": "https://www.youtube.com/channel/UCfM3zsQsOnfWNUppiycmBuw"
+  },
+  {
+    "id": 2,
+    "title": "Two Steps From Hell",
+    "image": "assets/src/imgs/two-steps-from-hell.jpg",
+    "url": "https://www.youtube.com/channel/UC3swwxiALG5c0Tvom83tPGg"
+  },
+  {
+    "id": 3,
+    "title": "AudioMachine",
+    "image": "assets/src/imgs/audiomachine.jpg",
+    "url": "https://www.youtube.com/audiomachine"
+  },
+  {
+    "id": 4,
+    "title": "Adrian Von Ziegler",
+    "image": "assets/src/imgs/adrian-von-ziegler.jpg",
+    "url": "https://www.youtube.com/c/AdrianvonZiegler"
+  },
+  {
+    "id": 5,
+    "title": "Antti Martikainen",
+    "image": "assets/src/imgs/antti-mart.jpg",
+    "url": "https://www.youtube.com/user/AJMartikainen"
+  }
+]

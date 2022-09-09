@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "Bears Cave",
+    "image": "assets/src/imgs/bear-cave.jpg",
+    "url": "https://ro.wikipedia.org/wiki/Pe%C8%99tera_Ur%C8%99ilor"
+  },
+  {
+    "id": 2,
+    "title": "Black Church",
+    "image": "assets/src/imgs/black-church.jpg",
+    "url": "https://ro.wikipedia.org/wiki/Biserica_Neagr%C4%83"
+  },
+  {
+    "id": 3,
+    "title": "Bran Castle",
+    "image": "assets/src/imgs/bran-castle.jpg",
+    "url": "https://ro.wikipedia.org/wiki/Castelul_Bran"
+  },
+  {
+    "id": 4,
+    "title": "Iron Gates",
+    "image": "assets/src/imgs/iron-gates.jpg",
+    "url": "https://ro.wikipedia.org/wiki/Por%C8%9Bile_de_Fier"
+  },
+  {
+    "id": 5,
+    "title": "Moldoveanu Peak",
+    "image": "assets/src/imgs/moldoveanu-peak.jpg",
+    "url": "https://ro.wikipedia.org/wiki/V%C3%A2rful_Moldoveanu"
+  },
+  {
+    "id": 6,
+    "title": "Peles Castle",
+    "image": "assets/src/imgs/peles-castle.jpg",
+    "url": "https://ro.wikipedia.org/wiki/Castelul_Pele%C8%99"
+  },
+  {
+    "id": 7,
+    "title": "Turda Saline",
+    "image": "assets/src/imgs/turda-saline.jpg",
+    "url": "https://ro.wikipedia.org/wiki/Salina_Turda"
+  },
+  {
+    "id": 8,
+    "title": "Turzi keys",
+    "image": "assets/src/imgs/turzi-key.jpg",
+    "url": "https://ro.wikipedia.org/wiki/Cheile_Turzii"
+  }
+]

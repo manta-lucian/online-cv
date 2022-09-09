@@ -1,0 +1,14 @@
+.hire-wrap {
+    margin-top: 0;
+    justify-self: center;
+    grid-column: 1/9;
+}
+.logo-slo-wrap {
+    grid-column: 1/9;
+}
+.quick-links {
+    grid-column: 1/9;
+}
+.contact {
+    grid-column: 1/9;
+}

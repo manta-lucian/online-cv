@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "image": "assets/src/imgs/chess.jpg",
+    "title": "Chess"
+  },
+  {
+    "id": 2,
+    "image": "assets/src/imgs/rubik.jpg",
+    "title": "Rubik's Cube"
+  },
+  {
+    "id": 3,
+    "image": "assets/src/imgs/minesweeper.jpeg",
+    "title": "Minesweeper"
+  },
+  {
+    "id": 4,
+    "image": "assets/src/imgs/demoncrawl.jpg",
+    "title": "Minesweeper v2"
+  },
+  {
+    "id": 5,
+    "image": "assets/src/imgs/it-takes-two.jpeg",
+    "title": "It Takes Two"
+  },
+  {
+    "id": 6,
+    "image": "assets/src/imgs/there-is-no-game.jpg",
+    "title": "There is NO Game"
+  },
+  {
+    "id": 7,
+    "image": "assets/src/imgs/satisfactory.jpg",
+    "title": "Satisfactory"
+  }
+]

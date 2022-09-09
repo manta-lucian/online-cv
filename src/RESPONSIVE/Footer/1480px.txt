@@ -1,0 +1,15 @@
+.footer-container {
+    padding: 10rem 2rem 0 2rem;
+}
+.logo-slo-wrap {
+    grid-column: 1/2;
+}
+.quick-links {
+    grid-column: 3/6;
+}
+.contact {
+    grid-column: 6/10;
+}
+.hire-wrap {
+    grid-column: 11/13;
+}

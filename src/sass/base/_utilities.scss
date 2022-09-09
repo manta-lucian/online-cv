@@ -1,0 +1,53 @@
+.active-link {
+  border-bottom: 3px solid purple;
+}
+
+.margin-bottom-big {
+  margin-bottom: 20rem;
+}
+
+.box-shadow {
+  box-shadow: 0rem 1.5rem 4rem $color-shadow;
+}
+
+.helper-div {
+  width: 50px;
+  height: 200px;
+  position: absolute;
+  top: -16rem;
+}
+
+.helper-div-home {
+  height: 850px;
+  top: 0px;
+}
+
+.helper-div-skills {
+  height: 1550px;
+  top: 789px;
+}
+
+.helper-div-portofolio {
+  height: 300px;
+  top: 789px;
+}
+.helper-div-about {
+  top: 750px;
+  height: 1250px;
+}
+.helper-div-contact {
+  top: 10rem;
+}
+
+.see-more {
+  background: none;
+  border: none;
+  outline: none;
+  color: $color-secondary;
+  font-size: $big-font-size;
+
+  &:hover {
+    color: $color-contrast;
+    cursor: pointer;
+  }
+}

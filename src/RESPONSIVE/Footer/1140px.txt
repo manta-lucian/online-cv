@@ -1,0 +1,19 @@
+.footer-container {
+    /* grid-template-rows: 2fr 1fr 1fr; */
+    padding: 2rem 2rem 0 2rem;
+    row-gap: 5rem;
+}
+.logo-slo-wrap {
+    grid-column: 2/12;
+}
+
+.quick-links {
+    grid-column: 1/7;
+}
+
+.contact {
+    grid-column: 7/-1;
+}
+.hire-wrap {
+    /* margin-top: 5rem; */
+}

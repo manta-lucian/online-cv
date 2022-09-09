@@ -1,0 +1,7 @@
+.about-right-side-container {
+    grid-column: 5/-1;
+}
+
+.about-left-side-container {
+    grid-column: 1/5;
+}

@@ -1,0 +1,3 @@
+.about-description-c {
+    font-size: 2.2rem;
+}

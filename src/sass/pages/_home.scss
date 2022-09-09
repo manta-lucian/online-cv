@@ -1,0 +1,12 @@
+.master-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-areas:
+    "hero hero hero hero hero hero hero hero hero hero hero hero"
+    "skills skills skills skills skills skills skills skills skills skills skills skills"
+    "porto porto porto porto porto porto porto porto porto porto porto porto"
+    "about about about about about about about about about about about about"
+    "passion passion passion passion passion passion passion passion passion passion passion passion"
+    "footer footer footer footer footer footer footer footer footer footer footer footer";
+  column-gap: 2rem;
+}

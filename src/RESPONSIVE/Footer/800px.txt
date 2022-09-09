@@ -1,0 +1,6 @@
+.contact__title {
+    width: 100%;
+}
+.quick-links__title {
+    width: 100%;
+}

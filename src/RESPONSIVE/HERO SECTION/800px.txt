@@ -1,0 +1,28 @@
+.hero-content-button-container {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 5rem;
+}
+
+.hero-content__information {
+    font-size: 1.5rem;
+}
+
+.hero-content-paragraph-container {
+    width: 40rem;
+}
+
+.hero-content__introduction-name {
+    margin-left: 2rem;
+}
+
+.hero-content__introduction {
+    margin-left: 2rem;
+    font-size: 3.5rem;
+}
+
+.hero-content__greet {
+    font-size: 1.5rem;
+}

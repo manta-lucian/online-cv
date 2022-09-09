@@ -1,0 +1,96 @@
+.porto-container {
+  grid-area: porto;
+  display: grid;
+  row-gap: 5rem;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 5rem 0;
+  background-image: linear-gradient(130deg, $color-secondary, $color-white, $color-contrast);
+  background-size: 200% 200%;
+  animation: gradient-animation 5s ease infinite;
+  position: relative;
+}
+
+.porto-head {
+  grid-column: 2/12;
+
+  &__title {
+    margin: 0 0 5rem 10rem;
+    width: 350px;
+    color: #5680e9;
+    box-shadow: 0 0.5rem 0 0 $color-primary;
+    font-size: $large-font-size;
+  }
+
+  &__description {
+    font-size: $medium-plus-font-size;
+  }
+}
+
+.porto-gallery-container {
+  grid-column: 2/12;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  row-gap: 4rem;
+  padding: 2rem;
+}
+
+.porto-card {
+  position: relative;
+  & img {
+    width: 100%;
+    height: 250px;
+  }
+
+  &:hover .porto-card-hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+}
+
+.porto-card-hover {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  justify-content: center;
+  align-items: center;
+  color: $color-secondary;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, $color-black-eight, $color-black-eight);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.4s;
+
+  &__title {
+    font-size: $large-font-size;
+  }
+  &__url {
+    font-size: $big-font-size;
+  }
+
+  & a {
+    text-decoration: none;
+    color: $color-white;
+    transition: all 0.2s;
+    &:hover {
+      color: $color-secondary;
+      box-shadow: 0 0.2rem 0 0 $color-contrast;
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .porto-head__title {
+    margin: 0 0 5rem 0;
+    width: 30rem;
+    color: #5680e9;
+    box-shadow: 0 0.5rem 0 0 #5680e9;
+    font-size: $big-plus-font-size;
+  }
+  .porto-head__description {
+    font-size: 2rem;
+  }
+}

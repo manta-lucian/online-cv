@@ -1,0 +1,81 @@
+.about-container {
+    grid-template-areas:
+        "a a a a a a a a a a a a"
+        "b b b b b b b b b b b b";
+}
+
+
+.about-head-title {
+    font-size: 5.5rem;
+    box-shadow: 0 0.5rem 0 0 #5680e9;
+    width: 300px;
+    /* text-align: center; */
+    color: #5abaea;
+    align-self: self-start;
+}
+
+.about-right-side-container {
+    grid-column: 5/-1;
+    grid-area: b;
+    padding: 0 2rem 2rem 0;
+    padding-left: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4rem;
+    color: white;
+    margin-top: 5rem;
+}
+
+.about-left-side-container {
+    position: relative;
+    grid-column: 1/5;
+    grid-area: a;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem;
+    gap: 1rem;
+    color: white;
+}
+
+.vertical-line-divider {
+    position: absolute;
+    /* top: 50%; */
+    /* transform: translateY(-50%); */
+    bottom: 0;
+    /* right: 0; */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 3px;
+    background-color: #5680e9;
+    box-shadow: 0px 0px 1rem 3px #5680e9;
+    animation: glow 2s infinite;
+}
+
+.about-resume-button {
+    /* margin-top: 3rem; */
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    padding: 2rem 4rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
