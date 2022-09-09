@@ -135,6 +135,10 @@
 }
 
 @media only screen and (max-width: 850px) {
+  html {
+    font-size: 50%;
+  }
+
   .about-container {
     grid-template-areas:
       "a a a a a a a a a a a a"

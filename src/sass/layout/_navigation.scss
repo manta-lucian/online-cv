@@ -183,7 +183,7 @@
     grid-area: a;
     font-size: $medium-font-size;
     background-color: $color-primary-opacity-eight;
-    height: 170px;
+    padding: 1rem;
   }
 
   .navigation-container-solid-color {
@@ -306,12 +306,25 @@
 }
 
 @media only screen and (max-width: 800px) {
+  html {
+    font-size: 50%;
+  }
+
   .hero-content-button-container {
     display: flex;
     gap: 2.5rem;
     align-items: center;
     flex-direction: column;
     margin-right: 5rem;
+  }
+  .hero-container {
+    grid-template-areas:
+      "a a a a a a a a a a a a"
+      ". . b b b b b b b b . ."
+      ". . b b b b b b b b . ."
+      ". . b b b b b b b b . ."
+      ". . c c c c c c c c . .";
+    margin-bottom: 10rem;
   }
 
   .navigation-logo svg {

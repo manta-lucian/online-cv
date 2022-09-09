@@ -90,7 +90,7 @@ input:invalid {
   border-bottom: 3px solid purple; }
 
 .margin-bottom-big {
-  margin-bottom: 20rem; }
+  margin-bottom: 10rem; }
 
 .box-shadow {
   box-shadow: 0rem 1.5rem 4rem rgba(0, 0, 0, 0.2); }
@@ -335,7 +335,7 @@ input:invalid {
     grid-area: a;
     font-size: 2rem;
     background-color: rgba(86, 128, 233, 0.8);
-    height: 170px; }
+    padding: 1rem; }
   .navigation-container-solid-color {
     background-color: #5680e9; }
   .navigation-logo {
@@ -420,12 +420,17 @@ input:invalid {
       cursor: pointer; } }
 
 @media only screen and (max-width: 800px) {
+  html {
+    font-size: 50%; }
   .hero-content-button-container {
     display: flex;
     gap: 2.5rem;
     align-items: center;
     flex-direction: column;
     margin-right: 5rem; }
+  .hero-container {
+    grid-template-areas: "a a a a a a a a a a a a" ". . b b b b b b b b . ." ". . b b b b b b b b . ." ". . b b b b b b b b . ." ". . c c c c c c c c . .";
+    margin-bottom: 10rem; }
   .navigation-logo svg {
     font-size: 3.5rem; }
   .navigation-icons__list {
@@ -688,6 +693,8 @@ input:invalid {
     grid-row: 1; } }
 
 @media only screen and (max-width: 750px) {
+  html {
+    font-size: 50%; }
   .skills-container {
     gap: 5rem; }
   .skills-head-title {
@@ -787,6 +794,10 @@ input:invalid {
     font-size: 3.5rem; }
   .porto-head__description {
     font-size: 2rem; } }
+
+@media only screen and (max-width: 850px) {
+  html {
+    font-size: 50%; } }
 
 .about-container {
   position: relative;
@@ -896,6 +907,8 @@ input:invalid {
     padding: 2rem 4rem; } }
 
 @media only screen and (max-width: 850px) {
+  html {
+    font-size: 50%; }
   .about-container {
     grid-template-areas: "a a a a a a a a a a a a" "b b b b b b b b b b b b";
     row-gap: 0;
@@ -1026,6 +1039,8 @@ input:invalid {
     clip-path: polygon(50% 10%, 50% 10%, 65% 0, 100% 0, 100% 100%, 0 100%, 0 0, 35% 0); } }
 
 @media only screen and (max-width: 885px) {
+  html {
+    font-size: 50%; }
   .passion-container {
     clip-path: polygon(50% 5%, 50% 5%, 65% 0, 100% 0, 100% 100%, 0 100%, 0 0, 35% 0); }
   .gaming-p-wrap {
@@ -1038,8 +1053,7 @@ input:invalid {
     justify-content: center;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    align-items: center; } }
+    gap: 2rem; } }
 
 .footer-container {
   grid-area: footer;
@@ -1175,6 +1189,8 @@ input:invalid {
     margin-top: 0; } }
 
 @media only screen and (max-width: 850px) {
+  html {
+    font-size: 50%; }
   .hire-wrap {
     margin-top: 0;
     justify-self: center; }
