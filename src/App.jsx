@@ -70,6 +70,7 @@ function App() {
           isFooterVisible={isFooterVisible}
           scrollToFooter={scrollToFooter}
           handleModalState={handleModalState}
+          setShowModal={setShowModal}
         ></Navigation>
         <HeroContent></HeroContent>
       </Hero>

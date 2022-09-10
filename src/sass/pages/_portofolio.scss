@@ -100,3 +100,10 @@
     font-size: 50%;
   }
 }
+@media only screen and (max-width: 795px) {
+  .porto-gallery-container {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}

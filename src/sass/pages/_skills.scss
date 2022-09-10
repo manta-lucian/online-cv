@@ -142,18 +142,30 @@
 
 @media only screen and (max-width: 570px) {
   .skill-card-container {
-    grid-column: 1/12;
+    grid-column: 2/-1;
   }
 }
 
 @media only screen and (max-width: 500px) {
   .skill-card-container {
-    grid-column: 1/11;
+    grid-column: 2/12;
   }
 }
 
 @media only screen and (max-width: 450px) {
   .skill-card-container {
-    grid-column: 1/10;
+    grid-column: 2/12;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .skill-card-container {
+    grid-column: 2/11;
+  }
+}
+
+@media only screen and (max-width: 378px) {
+  .skill-card-container {
+    grid-column: 2/10;
   }
 }

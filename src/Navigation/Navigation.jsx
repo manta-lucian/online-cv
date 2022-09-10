@@ -16,6 +16,7 @@ const Navigation = React.forwardRef((props, ref) => {
     isFooterVisible,
     scrollToFooter,
     handleModalState,
+    setShowModal,
   } = props;
   const [showMobileNav, setShowMobileNav] = useState(false);
   const [navColor, setNavColor] = useState(false);
@@ -108,6 +109,8 @@ const Navigation = React.forwardRef((props, ref) => {
           scrollToSkills={scrollToSkills}
           scrollToPortofolio={scrollToPortofolio}
           scrollToAboutMe={scrollToAboutMe}
+          scrollToFooter={scrollToFooter}
+          setShowModal={setShowModal}
         />
       ) : null}
       <div className="navigation-logo">

@@ -709,15 +709,23 @@ input:invalid {
 
 @media only screen and (max-width: 570px) {
   .skill-card-container {
-    grid-column: 1/12; } }
+    grid-column: 2/-1; } }
 
 @media only screen and (max-width: 500px) {
   .skill-card-container {
-    grid-column: 1/11; } }
+    grid-column: 2/12; } }
 
 @media only screen and (max-width: 450px) {
   .skill-card-container {
-    grid-column: 1/10; } }
+    grid-column: 2/12; } }
+
+@media only screen and (max-width: 415px) {
+  .skill-card-container {
+    grid-column: 2/11; } }
+
+@media only screen and (max-width: 378px) {
+  .skill-card-container {
+    grid-column: 2/10; } }
 
 .porto-container {
   grid-area: porto;
@@ -798,6 +806,12 @@ input:invalid {
 @media only screen and (max-width: 850px) {
   html {
     font-size: 50%; } }
+
+@media only screen and (max-width: 795px) {
+  .porto-gallery-container {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); } }
 
 .about-container {
   position: relative;
@@ -1045,6 +1059,11 @@ input:invalid {
     clip-path: polygon(50% 5%, 50% 5%, 65% 0, 100% 0, 100% 100%, 0 100%, 0 0, 35% 0); }
   .gaming-p-wrap {
     font-size: 2.5rem; } }
+
+@media only screen and (max-width: 860px) {
+  .gaming-gallery-container {
+    grid-column: 1/-1;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); } }
 
 @media only screen and (max-width: 600px) {
   .passion-container {

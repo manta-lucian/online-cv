@@ -1,7 +1,14 @@
-import BurgerButton from "./BurgerButton";
-
 function MobileNav(props) {
-  const { scrollToSkills, setShowMobileNav, navColor, scrollInViewHome, scrollToPortofolio, scrollToAboutMe } = props;
+  const {
+    scrollToSkills,
+    setShowMobileNav,
+    navColor,
+    scrollInViewHome,
+    scrollToPortofolio,
+    scrollToAboutMe,
+    scrollToFooter,
+    setShowModal,
+  } = props;
   const burgerButtonContainer = document.querySelector(".burger-button-container");
   const topLine = document.querySelector(".top-line");
   const middleLine = document.querySelector(".middle-line");
@@ -67,17 +74,28 @@ function MobileNav(props) {
             </a>
           </li>
           <li className="mobile-nav__item">
-            <a className="mobile-nav__link" href="#">
-              Passions
-            </a>
-          </li>
-          <li className="mobile-nav__item">
-            <a className="mobile-nav__link" href="#">
+            <a
+              onClick={() => {
+                setShowMobileNav(false);
+                toggleClassesMobile();
+                scrollToFooter();
+              }}
+              className="mobile-nav__link"
+            >
               Contact
             </a>
           </li>
         </ul>
-        <button className="button call-to-action-button button-resume">Hire Me</button>
+        <button
+          onClick={() => {
+            setShowMobileNav(false);
+            toggleClassesMobile();
+            setShowModal(true);
+          }}
+          className="button call-to-action-button button-resume"
+        >
+          Hire Me
+        </button>
       </div>
     </div>
   );
