@@ -5,12 +5,15 @@ import { useState } from "react";
 import { useInView } from "react-intersection-observer";
 
 const Passions = (props) => {
-  const { ref: passionSection, inView: isPassionSectionInView } = useInView({ rootMargin: "0px 0px -800px 0px" });
+  const windowHeight = window.innerHeight;
+  const { ref: passionSection, inView: isPassionSectionInView } = useInView({
+    rootMargin: `0px 0px ${windowHeight > 800 ? "-800px" : windowHeight > 700 ? "-700px" : windowHeight > 600 ? "-600px" : "-500px"} 0px`,
+  });
 
   const passionCont = document.querySelector(".passion-container");
 
   if (isPassionSectionInView) {
-    passionCont.classList.add("from-top");
+    passionCont.classList.remove("go-up");
   }
 
   const [gaming, setGaming] = useState(true);

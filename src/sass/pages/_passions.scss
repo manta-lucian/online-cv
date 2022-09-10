@@ -74,10 +74,6 @@
   transform: translateY(-80%);
   opacity: 0;
 }
-.from-top {
-  transform: translateY(0);
-  opacity: 1;
-}
 
 @media only screen and (max-width: 1770px) {
   .passion-container {
@@ -93,10 +89,6 @@
     transform: translateY(-55%);
     opacity: 0;
   }
-  .from-top {
-    transform: translateY(0);
-    opacity: 1;
-  }
 }
 @media only screen and (max-width: 885px) {
   html {
@@ -111,10 +103,6 @@
   .go-up {
     transform: translateY(-45%);
     opacity: 0;
-  }
-  .from-top {
-    transform: translateY(0);
-    opacity: 1;
   }
 }
 
@@ -137,9 +125,5 @@
   .go-up {
     transform: translateY(-30%);
     opacity: 0;
-  }
-  .from-top {
-    transform: translateY(0);
-    opacity: 1;
   }
 }
