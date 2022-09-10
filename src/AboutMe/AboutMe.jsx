@@ -1,15 +1,27 @@
 import React from "react";
+import { useInView } from "react-intersection-observer";
+import Typed from "react-typed";
 
 const AboutMe = React.forwardRef((props, ref) => {
   const { ref1, ref2 } = ref;
+  const { ref: aboutMeSection, inView: isAboutMeSectioninView } = useInView();
+  const aboutMe = document.querySelector(".about-container");
+
+  if (isAboutMeSectioninView) {
+    aboutMe.classList.add("from-bottom");
+  }
+
   return (
-    <div className="about-container">
+    <div className="about-container" ref={aboutMeSection}>
       <div ref={ref1} className="helper-div"></div>
       <div ref={ref2} className="helper-div helper-div-about"></div>
       <div className="about-left-side-container">
         <div className="about-img"></div>
         <h2 className="about-name">
-          <span className="change-name-animation">Lucian</span> - Manta
+          <span className="change-name-animation">
+            <Typed strings={["Lucian", "Ionut"]} typeSpeed={100} backSpeed={50} backDelay={5000} loop />
+          </span>
+          - Manta
         </h2>
         <p className="about-position">Front End Developer</p>
         <button className="call-to-action-button button-resume button about-resume-button">Resume</button>

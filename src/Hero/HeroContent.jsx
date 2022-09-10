@@ -1,3 +1,5 @@
+import Typed from "react-typed";
+
 function HeroContent() {
   function scrollToFirstSection() {
     window.scrollTo({
@@ -11,7 +13,11 @@ function HeroContent() {
       <div className="hero-content">
         <h2 className="hero-content__greet">Hello and Welcome !</h2>
         <h1 className="hero-content__introduction">
-          My name is <span className="hero-content__introduction-name">Lucian - Manta</span>
+          My name is{" "}
+          <span className="hero-content__introduction-name">
+            <Typed strings={["Lucian", "Ionut"]} typeSpeed={100} backSpeed={50} backDelay={5000} loop />
+            Manta
+          </span>
         </h1>
         <div className="hero-content-paragraph-container">
           <p className="hero-content__information">Here you can find all the information about me...</p>

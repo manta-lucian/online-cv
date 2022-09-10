@@ -16,6 +16,36 @@
   }
 }
 
+@keyframes rotationX {
+  from {
+    transform: rotateX(0deg);
+  }
+  to {
+    transform: rotateX(360deg);
+  }
+}
+
+@keyframes fade-in-scale {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes fade-out-scale {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
 @keyframes star-jump {
   0% {
     transform: translateY(0);
@@ -101,4 +131,3 @@
     box-shadow: 0px 0px 1rem 1.5px $color-primary;
   }
 }
-

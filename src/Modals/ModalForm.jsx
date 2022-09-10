@@ -18,7 +18,7 @@ const ModalForm = (props) => {
   };
 
   return (
-    <div className="form-container" tabIndex={0} onKeyDown={handleModalStateOnKeyDown}>
+    <div className="form-container display-none" tabIndex={0} onKeyDown={handleModalStateOnKeyDown}>
       <div className="modal-form-container">
         <div className="close-button" onClick={handleModalState}>
           <div className="close-line close-line-1"></div>
@@ -30,9 +30,8 @@ const ModalForm = (props) => {
               <p>Let's do bussines</p>
             </div>
           </div>
-
           <form id="the-form" className="the-form" onSubmit={sendEmail}>
-            <input className="the-form__name" type="text" name="user_name" placeholder="Name" required minLength="3" focus />
+            <input className="the-form__name" type="text" name="user_name" placeholder="Name" required minLength="3" />
             <input className="the-form__email" type="email" name="user_email" placeholder="Email" required />
             <textarea
               className="the-form__message"
@@ -47,7 +46,7 @@ const ModalForm = (props) => {
           </form>
         </div>
         <div className="right-side">
-          <div className="right-side__img box-shadow">bgimg</div>
+          <div className="right-side__img box-shadow"></div>
         </div>
       </div>
     </div>

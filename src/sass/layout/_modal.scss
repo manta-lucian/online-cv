@@ -1,5 +1,4 @@
 .form-container {
-  display: flex;
   justify-content: center;
   align-items: center;
   position: fixed;
@@ -7,6 +6,16 @@
   height: 100%;
   background-image: linear-gradient(to right, $color-black-eight, $color-black-eight);
   z-index: 10;
+  animation: fade-out-scale 0.5s;
+}
+
+.display-flex {
+  display: flex;
+  animation: fade-in-scale 0.5s;
+}
+
+.display-none {
+  display: none;
 }
 
 .modal-form-container {
@@ -140,4 +149,31 @@
 .close-line-2 {
   transform-origin: center;
   transform: rotate(-45deg);
+}
+
+@media only screen and (max-width: 1450px) {
+  .modal-form-container {
+    width: 40%;
+  }
+  .left-side {
+    width: 100%;
+  }
+  .right-side {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .modal-form-container {
+    width: 85%;
+    height: 85%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .left-side {
+    &__img {
+      margin-top: 1rem;
+      background-size: 100% 100%;
+    }
+  }
 }

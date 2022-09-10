@@ -2,8 +2,17 @@ import Gaming from "./Gaming";
 import Travel from "./Travel";
 import Music from "./Music";
 import { useState } from "react";
+import { useInView } from "react-intersection-observer";
 
 const Passions = (props) => {
+  const { ref: passionSection, inView: isPassionSectionInView } = useInView({ rootMargin: "0px 0px -800px 0px" });
+
+  const passionCont = document.querySelector(".passion-container");
+
+  if (isPassionSectionInView) {
+    passionCont.classList.add("from-top");
+  }
+
   const [gaming, setGaming] = useState(true);
   const [travel, setTravel] = useState(false);
   const [music, setMusic] = useState(false);
@@ -31,7 +40,7 @@ const Passions = (props) => {
   };
 
   return (
-    <div className="passion-container">
+    <div className="passion-container go-up" ref={passionSection}>
       {props.children}
       <div className="passion-btn-wrap">
         <button onClick={handleGaming} className="button passion-btn passion-gaming-button">

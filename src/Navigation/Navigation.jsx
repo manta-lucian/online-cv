@@ -188,12 +188,12 @@ const Navigation = React.forwardRef((props, ref) => {
               </a>
             </li>
             <li className="navigation-icons__item">
-              <a className="navigation-icons__link" href="#">
+              <a className="navigation-icons__link" href="https://github.com/manta-lucian" target="_blank">
                 <FaGithub />
               </a>
             </li>
             <li className="navigation-icons__item">
-              <a className="navigation-icons__link" href="#">
+              <a className="navigation-icons__link" href="https://www.linkedin.com/in/lucian-manta-34a75224b/" target="_blank">
                 <FaLinkedin />
               </a>
             </li>
@@ -208,12 +208,12 @@ const Navigation = React.forwardRef((props, ref) => {
             </a>
           </li>
           <li className="navigation-icons__item">
-            <a className="navigation-icons__link" href="#">
+            <a className="navigation-icons__link" href="https://github.com/manta-lucian" target="_blank">
               <FaGithub />
             </a>
           </li>
           <li className="navigation-icons__item">
-            <a className="navigation-icons__link" href="#">
+            <a className="navigation-icons__link" href="https://www.linkedin.com/in/lucian-manta-34a75224b/" target="_blank">
               <FaLinkedin />
             </a>
           </li>

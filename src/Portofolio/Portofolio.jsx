@@ -4,6 +4,7 @@ import React from "react";
 
 const Portofolio = React.forwardRef((props, ref) => {
   const [project, setProject] = useState(projects);
+
   const { ref1, ref2 } = ref;
 
   return (

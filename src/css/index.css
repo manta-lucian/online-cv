@@ -10,6 +10,28 @@
   to {
     transform: rotateY(360deg); } }
 
+@keyframes rotationX {
+  from {
+    transform: rotateX(0deg); }
+  to {
+    transform: rotateX(360deg); } }
+
+@keyframes fade-in-scale {
+  from {
+    transform: scale(0);
+    opacity: 0; }
+  to {
+    transform: scale(1);
+    opacity: 1; } }
+
+@keyframes fade-out-scale {
+  from {
+    transform: scale(1);
+    opacity: 1; }
+  to {
+    transform: scale(0);
+    opacity: 0; } }
+
 @keyframes star-jump {
   0% {
     transform: translateY(0); }
@@ -477,14 +499,21 @@ input:invalid {
     font-size: 3rem; } }
 
 .form-container {
-  display: flex;
   justify-content: center;
   align-items: center;
   position: fixed;
   width: 100%;
   height: 100%;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
-  z-index: 10; }
+  z-index: 10;
+  animation: fade-out-scale 0.5s; }
+
+.display-flex {
+  display: flex;
+  animation: fade-in-scale 0.5s; }
+
+.display-none {
+  display: none; }
 
 .modal-form-container {
   width: 80%;
@@ -595,6 +624,24 @@ input:invalid {
   transform-origin: center;
   transform: rotate(-45deg); }
 
+@media only screen and (max-width: 1450px) {
+  .modal-form-container {
+    width: 40%; }
+  .left-side {
+    width: 100%; }
+  .right-side {
+    display: none; } }
+
+@media only screen and (max-width: 1050px) {
+  .modal-form-container {
+    width: 85%;
+    height: 85%; } }
+
+@media only screen and (max-width: 700px) {
+  .left-side__img {
+    margin-top: 1rem;
+    background-size: 100% 100%; } }
+
 .master-container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -621,7 +668,8 @@ input:invalid {
   display: grid;
   column-gap: 5rem;
   grid-template-columns: 1fr 2fr;
-  padding: 2rem; }
+  padding: 2rem;
+  transition: all 1s; }
 
 .skill-card-container-reverse {
   grid-template-columns: 2fr 1fr; }
@@ -706,6 +754,22 @@ input:invalid {
     font-size: 3.5rem; }
   .skill-card-right-item__description {
     font-size: 2rem; } }
+
+.go-left {
+  transform: translateX(-80%);
+  opacity: 0; }
+
+.from-left {
+  transform: translateX(0);
+  opacity: 1; }
+
+.go-right {
+  transform: translateX(80%);
+  opacity: 0; }
+
+.from-right {
+  transform: translateX(0);
+  opacity: 1; }
 
 @media only screen and (max-width: 570px) {
   .skill-card-container {
@@ -998,7 +1062,8 @@ input:invalid {
   clip-path: polygon(50% 15%, 50% 15%, 65% 0, 100% 0, 100% 100%, 0 100%, 0 0, 35% 0);
   padding-top: 20rem;
   background-image: linear-gradient(to right, rgba(132, 206, 235, 0.4), rgba(132, 206, 235, 0.4)), url("src/imgs/hero-gif3.gif");
-  background-size: cover; }
+  background-size: cover;
+  transition: all 1s; }
 
 .passion-btn-wrap {
   grid-column: 2/12;
@@ -1018,8 +1083,10 @@ input:invalid {
   border-radius: 2rem;
   text-transform: capitalize; }
   .passion-btn:hover {
-    background-color: #8760d0;
-    color: #5abaea; }
+    background-color: #5abaea;
+    color: #000;
+    animation: rotationX 0.5s;
+    transition-timing-function: cubic-bezier(0.25, 1, 0.5, 1); }
 
 .gaming-container {
   display: flex;
@@ -1044,21 +1111,41 @@ input:invalid {
     opacity: 1;
     cursor: pointer; }
 
+.go-up {
+  transform: translateY(-80%);
+  opacity: 0; }
+
+.from-top {
+  transform: translateY(0);
+  opacity: 1; }
+
 @media only screen and (max-width: 1770px) {
   .passion-container {
     clip-path: polygon(50% 12.5%, 50% 12.5%, 65% 0, 100% 0, 100% 100%, 0 100%, 0 0, 35% 0); } }
 
 @media only screen and (max-width: 1325px) {
   .passion-container {
-    clip-path: polygon(50% 10%, 50% 10%, 65% 0, 100% 0, 100% 100%, 0 100%, 0 0, 35% 0); } }
+    clip-path: polygon(50% 10%, 50% 10%, 65% 0, 100% 0, 100% 100%, 0 100%, 0 0, 35% 0); }
+  .go-up {
+    transform: translateY(-55%);
+    opacity: 0; }
+  .from-top {
+    transform: translateY(0);
+    opacity: 1; } }
 
 @media only screen and (max-width: 885px) {
   html {
-    font-size: 50%; }
+    font-size: 55%; }
   .passion-container {
     clip-path: polygon(50% 5%, 50% 5%, 65% 0, 100% 0, 100% 100%, 0 100%, 0 0, 35% 0); }
   .gaming-p-wrap {
-    font-size: 2.5rem; } }
+    font-size: 2.5rem; }
+  .go-up {
+    transform: translateY(-45%);
+    opacity: 0; }
+  .from-top {
+    transform: translateY(0);
+    opacity: 1; } }
 
 @media only screen and (max-width: 860px) {
   .gaming-gallery-container {
@@ -1072,7 +1159,13 @@ input:invalid {
     justify-content: center;
     display: flex;
     flex-direction: column;
-    gap: 2rem; } }
+    gap: 2rem; }
+  .go-up {
+    transform: translateY(-30%);
+    opacity: 0; }
+  .from-top {
+    transform: translateY(0);
+    opacity: 1; } }
 
 .footer-container {
   grid-area: footer;

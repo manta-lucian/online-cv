@@ -21,6 +21,7 @@
   column-gap: 5rem;
   grid-template-columns: 1fr 2fr;
   padding: 2rem;
+  transition: all 1s;
 }
 .skill-card-container-reverse {
   grid-template-columns: 2fr 1fr;
@@ -138,6 +139,24 @@
       font-size: $medium-font-size;
     }
   }
+}
+
+.go-left {
+  transform: translateX(-80%);
+  opacity: 0;
+}
+
+.from-left {
+  transform: translateX(0);
+  opacity: 1;
+}
+.go-right {
+  transform: translateX(80%);
+  opacity: 0;
+}
+.from-right {
+  transform: translateX(0);
+  opacity: 1;
 }
 
 @media only screen and (max-width: 570px) {

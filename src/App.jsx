@@ -25,6 +25,8 @@ function App() {
   const { ref: footerActiveRef, inView: isFooterVisible } = useInView();
   const [showModal, setShowModal] = useState(false);
 
+  const formCont = document.querySelector(".form-container");
+
   const scrollToSkills = () => {
     skillsRef.current.scrollIntoView({ behavior: "smooth", block: "start", inline: "start" });
   };
@@ -47,13 +49,25 @@ function App() {
   const handleModalState = () => {
     if (!showModal) {
       setShowModal(true);
+      formCont.classList.remove("display-none");
+      formCont.classList.add("display-flex");
     } else {
+      formCont.classList.remove("display-flex");
+      setTimeout(() => {
+        formCont.classList.add("display-none");
+      }, 500);
       setShowModal(false);
     }
   };
 
   const handleModalStateOnKeyDown = (e) => {
-    if (e.key == "Escape") setShowModal(false);
+    if (e.key == "Escape") {
+      formCont.classList.remove("display-flex");
+      setTimeout(() => {
+        formCont.classList.add("display-none");
+      }, 500);
+      setShowModal(false);
+    }
   };
 
   return (
@@ -86,7 +100,7 @@ function App() {
         scrollToHome={scrollToHome}
         handleModalState={handleModalState}
       ></Footer>
-      {showModal ? <ModalForm handleModalState={handleModalState} handleModalStateOnKeyDown={handleModalStateOnKeyDown} /> : null}
+      <ModalForm handleModalState={handleModalState} handleModalStateOnKeyDown={handleModalStateOnKeyDown} />
       <ScrollToTop />
     </Layout>
   );

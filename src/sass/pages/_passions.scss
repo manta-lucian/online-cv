@@ -10,6 +10,7 @@
   padding-top: 20rem;
   background-image: linear-gradient(to right, $color-tertiary-four, $color-tertiary-four), url("src/imgs/hero-gif3.gif");
   background-size: cover;
+  transition: all 1s;
 }
 
 .passion-btn-wrap {
@@ -33,8 +34,10 @@
   text-transform: capitalize;
 
   &:hover {
-    background-color: $color-contrast;
-    color: $color-secondary;
+    background-color: $color-secondary;
+    color: $color-black;
+    animation: rotationX 0.5s;
+    transition-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
   }
 }
 
@@ -67,6 +70,15 @@
   }
 }
 
+.go-up {
+  transform: translateY(-80%);
+  opacity: 0;
+}
+.from-top {
+  transform: translateY(0);
+  opacity: 1;
+}
+
 @media only screen and (max-width: 1770px) {
   .passion-container {
     clip-path: polygon(50% 12.5%, 50% 12.5%, 65% 0, 100% 0, 100% 100%, 0 100%, 0 0, 35% 0);
@@ -77,16 +89,32 @@
   .passion-container {
     clip-path: polygon(50% 10%, 50% 10%, 65% 0, 100% 0, 100% 100%, 0 100%, 0 0, 35% 0);
   }
+  .go-up {
+    transform: translateY(-55%);
+    opacity: 0;
+  }
+  .from-top {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 @media only screen and (max-width: 885px) {
   html {
-    font-size: 50%;
+    font-size: 55%;
   }
   .passion-container {
     clip-path: polygon(50% 5%, 50% 5%, 65% 0, 100% 0, 100% 100%, 0 100%, 0 0, 35% 0);
   }
   .gaming-p-wrap {
     font-size: $medium-plus-font-size;
+  }
+  .go-up {
+    transform: translateY(-45%);
+    opacity: 0;
+  }
+  .from-top {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
@@ -105,5 +133,13 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+  }
+  .go-up {
+    transform: translateY(-30%);
+    opacity: 0;
+  }
+  .from-top {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
