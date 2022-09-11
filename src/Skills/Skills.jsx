@@ -1,7 +1,6 @@
 import { FaStar, FaRegStar, FaStarHalfAlt } from "react-icons/fa";
 import React from "react";
 import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
 
 const Skills = React.forwardRef((props, ref) => {
   const { ref: skillCard1, inView: isSkillCard1inView } = useInView();

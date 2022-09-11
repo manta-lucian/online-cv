@@ -45,6 +45,7 @@ function App() {
       behavior: "smooth",
     });
   };
+
   const handleModalState = () => {
     if (!showModal) {
       setShowModal(true);
