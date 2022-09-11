@@ -5,7 +5,7 @@
   row-gap: 10rem;
   grid-template-columns: repeat(12, 1fr);
   position: relative;
-  background-image: linear-gradient(to right, $color-black-six, $color-black-six), url("src/imgs/bg-fixed.jpg");
+  background-image: linear-gradient(to right, $color-black-six, $color-black-eight), url("src/imgs/bg-fixed.jpg");
   background-size: cover;
   background-attachment: fixed;
   padding: 20rem 0 25rem 0;

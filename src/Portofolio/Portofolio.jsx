@@ -18,12 +18,14 @@ const Portofolio = React.forwardRef((props, ref) => {
         <div className="porto-head__description">
           <p>
             Here you will a see a set of projects that i have done along my journey of learning all the concepts listed above. The
-            complexity of these projects have a wide range which starts from the very basiscs and progress all the way to advanced. They
-            were coded along the way with the creator of the courses "creator name" and afterwards practiced them alone once more.
+            complexity of these projects have a wide range which starts from the very basics and progress all the way to advanced. <br />
+            <br />
+            They were coded along the way with the creator of the courses "Jonas Schmedtmann" and afterwards practiced them alone once more.
           </p>
+          <br />
           <p>
             This gallery also contains homeworks given by &nbsp; "The informal school of IT" &nbsp; which some of them were actually
-            challenging
+            challenging.
           </p>
         </div>
       </div>

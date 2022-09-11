@@ -48,6 +48,7 @@ const Skills = React.forwardRef((props, ref) => {
       <div ref={ref1} className="helper-div"></div>
       <div ref={ref2} className="helper-div helper-div-skills"></div>
       <div className="skills-head-title">Skills</div>
+      <p className="skills-description rainbow-text-animated rainbow">In this section I've selected some skills that I am familiar with</p>
       <div className="skill-card-container skill-card-container-1 go-left" ref={skillCard1}>
         <div className="skill-card-left-item">
           <div className="skill-icon">
@@ -76,7 +77,7 @@ const Skills = React.forwardRef((props, ref) => {
         <div className="skill-card-right-item">
           <div className="skill-card-right-item__title">HyperText Markup Language</div>
           <p className="skill-card-right-item__description">
-            Is markup language for the structure and presentation of World Wide Web contents. HTML5 supports the traditional HTML and
+            It's a markup language for the structure and presentation of World Wide Web contents. HTML5 supports the traditional HTML and
             XHTML-style syntax and other new features in its markup, New APIs, XHTML and error handling.
           </p>
         </div>
@@ -154,8 +155,8 @@ const Skills = React.forwardRef((props, ref) => {
         <div className="skill-card-right-item">
           <div className="skill-card-right-item__title">JavaScript</div>
           <p className="skill-card-right-item__description">
-            Is a dynamic programming language that's used for web development, in web applications, for game development, and lots more. It
-            allows you to implement dynamic features on web pages that cannot be done with only HTML and CSS.
+            It's a dynamic programming language that's used for web development, in web applications, for game development, and lots more.
+            It allows you to implement dynamic features on web pages that cannot be done with only HTML and CSS.
           </p>
         </div>
         <div className="skill-card-left-item skill-card-left-item-reverse">
@@ -222,7 +223,7 @@ const Skills = React.forwardRef((props, ref) => {
         <div className="skill-card-right-item">
           <div className="skill-card-right-item__title">WordPress</div>
           <p className="skill-card-right-item__description">
-            Is a popular open source blog platform and content manager (CMS). Based on PHP and MySQL, WordPress allows users to create
+            It's a popular open source blog platform and content manager (CMS). Based on PHP and MySQL, WordPress allows users to create
             sophisticated, professional-looking websites and blogs.
           </p>
         </div>
@@ -280,7 +281,7 @@ const Skills = React.forwardRef((props, ref) => {
         <div className="skill-card-right-item">
           <div className="skill-card-right-item__title">Git</div>
           <p className="skill-card-right-item__description">
-            Is a free and open source software for distributed version control: tracking changes in any set of files, usually used for
+            It's a free and open source software for distributed version control: tracking changes in any set of files, usually used for
             coordinating work among programmers collaboratively developing source code during software development.
           </p>
         </div>

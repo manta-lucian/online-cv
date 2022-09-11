@@ -4,7 +4,7 @@ const Music = (props) => {
   return (
     <div className="gaming-container">
       <div className="gaming-p-wrap">
-        <p className="gaming-description">There is no time ina day that i don't listen to a masterpiece made by...</p>
+        <p className="gaming-description">There is no time in a day that i don't listen to a masterpiece made by...</p>
       </div>
       <div className="gaming-gallery-container">
         {musicData.map((el) => {

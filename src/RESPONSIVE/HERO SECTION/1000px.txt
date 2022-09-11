@@ -1,4 +1,0 @@
-The whole navigation should become a burger button
-the right side icons should be displayed row and place in the middle of the nav
-logo is fine
-Hire me button should be last inside the burger button

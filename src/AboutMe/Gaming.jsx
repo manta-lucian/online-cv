@@ -7,7 +7,7 @@ const Gaming = (props) => {
         <p className="gaming-description">
           I like anything that tests the mind and also these games that require some degree of game sense and skill in general.
         </p>
-        <p className="">I hate luck based games but play them ocasionally with friends and family for entertainment</p>
+        <p className="">I hate luck based games but play them ocasionally with friends and family for entertainment.</p>
       </div>
       <div className="gaming-gallery-container">
         {gamingData.map((el) => {

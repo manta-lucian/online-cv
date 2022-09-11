@@ -1,4 +1,0 @@
-.hero-content__introduction-name {
-    display: block;
-    margin-left: 5rem;
-}

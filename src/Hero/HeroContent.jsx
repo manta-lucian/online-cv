@@ -3,7 +3,7 @@ import Typed from "react-typed";
 function HeroContent() {
   function scrollToFirstSection() {
     window.scrollTo({
-      top: 990,
+      top: 850,
       behavior: "smooth",
     });
   }
@@ -11,7 +11,7 @@ function HeroContent() {
   return (
     <div className="hero-content-container">
       <div className="hero-content">
-        <h2 className="hero-content__greet">Hello and Welcome !</h2>
+        <h2 className="hero-content__greet">Hello and Welcome!</h2>
         <h1 className="hero-content__introduction">
           My name is{" "}
           <span className="hero-content__introduction-name">
@@ -20,10 +20,8 @@ function HeroContent() {
           </span>
         </h1>
         <div className="hero-content-paragraph-container">
-          <p className="hero-content__information">Here you can find all the information about me...</p>
-          <p className="hero-content__information">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur eligendi vero quam
-          </p>
+          <p className="hero-content__information">I'm a front end developer striving for the best because im a perfectionist</p>
+          <p className="hero-content__information">Here you can find just who I am</p>
         </div>
       </div>
       <div className="hero-content-button-container">

@@ -12,23 +12,23 @@ const Footer = React.forwardRef((props, ref) => {
         <div className="footer-logo">
           <FaAtom />
         </div>
-        <p className="slogan slogan--1">you visiualize</p>
-        <p className="slogan slogan--2">i create</p>
+        <p className="slogan slogan--1">You visiualize</p>
+        <p className="slogan slogan--2">I create</p>
       </div>
       <div className="quick-links">
         <p className="quick-links__title">Quick links</p>
         <ul className="quick-links__list">
           <li className="quick-links__item">
-            <a onClick={scrollToHome}>home</a>
+            <a onClick={scrollToHome}>Home</a>
           </li>
           <li className="quick-links__item">
-            <a onClick={scrollToSkills}>skills</a>
+            <a onClick={scrollToSkills}>Skills</a>
           </li>
           <li className="quick-links__item">
-            <a onClick={scrollToPortofolio}>portofolio</a>
+            <a onClick={scrollToPortofolio}>Portofolio</a>
           </li>
           <li className="quick-links__item">
-            <a onClick={scrollToAboutMe}>about</a>
+            <a onClick={scrollToAboutMe}>About</a>
           </li>
         </ul>
       </div>
@@ -46,7 +46,7 @@ const Footer = React.forwardRef((props, ref) => {
             </a>
           </li>
           <li className="contact__item">
-            <a href="#">
+            <a href="https://www.linkedin.com/in/lucian-manta-34a75224b/" target="_blank">
               <FaLinkedin /> linkedIn
             </a>
           </li>

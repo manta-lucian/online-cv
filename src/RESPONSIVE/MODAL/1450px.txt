@@ -1,6 +1,0 @@
-.modal-form-container {
-    width: 40%;
-}
-.left-side {
-    width: 100%;
-}

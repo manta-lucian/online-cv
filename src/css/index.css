@@ -88,6 +88,13 @@
   100% {
     box-shadow: 0px 0px 1rem 1.5px #5680e9; } }
 
+@keyframes rainbow-animation {
+  0%,
+  100% {
+    background-position: 0 0; }
+  50% {
+    background-position: 100% 0; } }
+
 *::after,
 *::before {
   margin: 0;
@@ -505,7 +512,7 @@ input:invalid {
   width: 100%;
   height: 100%;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
-  z-index: 10;
+  z-index: 5001;
   animation: fade-out-scale 0.5s; }
 
 .display-flex {
@@ -521,10 +528,13 @@ input:invalid {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 5px solid #fff;
+  border: 5px solid #000;
   border-radius: 1rem;
   background-color: #fff;
-  position: relative; }
+  position: relative;
+  background-image: linear-gradient(to bottom right, #5abaea, #8760d0, #fff);
+  background-size: 200% 200%;
+  animation: gradient-animation 5s ease infinite; }
 
 .left-side {
   width: 50%;
@@ -536,7 +546,7 @@ input:invalid {
   font-size: 3rem; }
   .left-side__img {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("src/imgs/hand-shake.jpg");
-    background-size: cover;
+    background-size: 100% 100%;
     height: 300px;
     position: relative;
     border-radius: 1rem; }
@@ -589,7 +599,7 @@ input:invalid {
   padding: 2rem; }
   .right-side__img {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url("src/imgs/typing.gif");
-    background-size: cover;
+    background-size: 100% 100%;
     border-radius: 1rem;
     width: 100%;
     height: 100%; }
@@ -606,14 +616,15 @@ input:invalid {
   align-items: center; }
   .close-button:hover {
     background-color: #8760d0;
-    cursor: pointer; }
+    cursor: pointer;
+    transform: scale(2); }
     .close-button:hover .close-line {
       background-color: white; }
 
 .close-line {
   width: 120%;
-  height: 2px;
-  background-color: #000;
+  height: 3px;
+  background-color: #fff;
   position: absolute; }
 
 .close-line-1 {
@@ -755,6 +766,25 @@ input:invalid {
   .skill-card-right-item__description {
     font-size: 2rem; } }
 
+.skills-description {
+  font-size: 4rem;
+  grid-column: 1/-1;
+  justify-self: center; }
+
+.rainbow {
+  text-align: center;
+  text-decoration: underline;
+  font-family: monospace;
+  letter-spacing: 3px; }
+
+.rainbow-text-animated {
+  background: linear-gradient(to right, #6666ff, #0099ff, #00ff00, #ff3399, #6666ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow-animation 4s ease-in-out infinite;
+  background-size: 400% 100%; }
+
 .go-left {
   transform: translateX(-80%);
   opacity: 0; }
@@ -771,13 +801,31 @@ input:invalid {
   transform: translateX(0);
   opacity: 1; }
 
+@media only screen and (max-width: 924px) {
+  .skills-description {
+    font-size: 3rem; } }
+
+@media only screen and (max-width: 622px) {
+  .skills-description {
+    font-size: 2.5rem; } }
+
 @media only screen and (max-width: 570px) {
   .skill-card-container {
     grid-column: 2/-1; } }
 
+@media only screen and (max-width: 546px) {
+  .skills-description {
+    font-size: 2rem;
+    grid-column: 2/12; } }
+
 @media only screen and (max-width: 500px) {
   .skill-card-container {
     grid-column: 2/12; } }
+
+@media only screen and (max-width: 490px) {
+  .skills-description {
+    grid-column: 1/-1;
+    width: 300px; } }
 
 @media only screen and (max-width: 450px) {
   .skill-card-container {
@@ -785,10 +833,14 @@ input:invalid {
 
 @media only screen and (max-width: 415px) {
   .skill-card-container {
+    grid-column: 2/11; }
+  .skills-description {
     grid-column: 2/11; } }
 
 @media only screen and (max-width: 378px) {
   .skill-card-container {
+    grid-column: 2/10; }
+  .skills-description {
     grid-column: 2/10; } }
 
 .porto-container {
@@ -884,7 +936,7 @@ input:invalid {
   row-gap: 10rem;
   grid-template-columns: repeat(12, 1fr);
   position: relative;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("src/imgs/bg-fixed.jpg");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("src/imgs/bg-fixed.jpg");
   background-size: cover;
   background-attachment: fixed;
   padding: 20rem 0 25rem 0;
@@ -1062,7 +1114,7 @@ input:invalid {
   clip-path: polygon(50% 15%, 50% 15%, 65% 0, 100% 0, 100% 100%, 0 100%, 0 0, 35% 0);
   padding-top: 20rem;
   background-image: linear-gradient(to right, rgba(132, 206, 235, 0.4), rgba(132, 206, 235, 0.4)), url("src/imgs/hero-gif3.gif");
-  background-size: cover;
+  background-size: 100% 100%;
   transition: all 1s; }
 
 .passion-btn-wrap {
@@ -1169,7 +1221,8 @@ input:invalid {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  text-align: center; }
 
 .footer-logo {
   color: #fff;
@@ -1181,7 +1234,7 @@ input:invalid {
   color: #fff; }
 
 .slogan--1 {
-  width: 170px; }
+  width: 172px; }
 
 .quick-links,
 .contact {

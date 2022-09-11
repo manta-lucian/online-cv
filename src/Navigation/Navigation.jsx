@@ -111,6 +111,7 @@ const Navigation = React.forwardRef((props, ref) => {
           scrollToAboutMe={scrollToAboutMe}
           scrollToFooter={scrollToFooter}
           setShowModal={setShowModal}
+          handleModalState={handleModalState}
         />
       ) : null}
       <div className="navigation-logo">

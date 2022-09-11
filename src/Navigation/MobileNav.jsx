@@ -8,6 +8,7 @@ function MobileNav(props) {
     scrollToAboutMe,
     scrollToFooter,
     setShowModal,
+    handleModalState,
   } = props;
   const burgerButtonContainer = document.querySelector(".burger-button-container");
   const topLine = document.querySelector(".top-line");
@@ -91,6 +92,7 @@ function MobileNav(props) {
             setShowMobileNav(false);
             toggleClassesMobile();
             setShowModal(true);
+            handleModalState();
           }}
           className="button call-to-action-button button-resume"
         >
