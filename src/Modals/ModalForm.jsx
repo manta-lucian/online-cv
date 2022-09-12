@@ -42,7 +42,7 @@ const ModalForm = (props) => {
               placeholder="Message"
               form="the-form"
             ></textarea>
-            <input onClick={handleModalState} className="the-form__button" type="submit" name="submit" value="Send Message" />
+            <input className="the-form__button" type="submit" name="submit" value="Send Message" />
           </form>
         </div>
         <div className="right-side">
