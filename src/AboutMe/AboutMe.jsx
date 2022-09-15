@@ -24,7 +24,7 @@ const AboutMe = React.forwardRef((props, ref) => {
           - Manta
         </h2>
         <p className="about-position">Front End Developer</p>
-        <form className="resume-button" method="get" action="resume/resume-manta.pdf" target="_blank">
+        <form className="resume-button" method="get" action="assets/resume/resume-manta.pdf" target="_blank">
           <button type="submit" className="call-to-action-button button-resume button about-resume-button">
             Resume
           </button>

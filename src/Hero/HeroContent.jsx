@@ -28,7 +28,7 @@ function HeroContent() {
         <button onClick={scrollToFirstSection} className="button-read-more button">
           Read More
         </button>
-        <form className="resume-button" method="get" action="resume/resume-manta.pdf" target="_blank">
+        <form className="resume-button" method="get" action="assets/resume/resume-manta.pdf" target="_blank">
           <button type="submit" className="call-to-action-button button-resume button">
             Resume
           </button>
