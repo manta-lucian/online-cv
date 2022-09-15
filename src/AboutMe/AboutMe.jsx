@@ -24,7 +24,11 @@ const AboutMe = React.forwardRef((props, ref) => {
           - Manta
         </h2>
         <p className="about-position">Front End Developer</p>
-        <button className="call-to-action-button button-resume button about-resume-button">Resume</button>
+        <form className="resume-button" method="get" action="resume/resume-manta.pdf" target="_blank">
+          <button type="submit" className="call-to-action-button button-resume button about-resume-button">
+            Resume
+          </button>
+        </form>
         <span className="vertical-line-divider"></span>
       </div>
       <div className="about-right-side-container">
@@ -35,7 +39,7 @@ const AboutMe = React.forwardRef((props, ref) => {
             everyday. As everyone says, when learning about this field there is no end, it's a continuous evolving path.
           </p>
           <p className="about-description-c__content--2">
-            I've been intrigued by Informational Technology since a friend of mine braged about a cool coding trick but only now began to
+            I've been intrigued by Information Technology since a friend of mine braged about a cool coding trick but only now began to
             really learn IT. I like to code in my free time to learn more and develop my skills and I also enjoy working both as a team or
             invidually. I'm a friendly, flexible person who gets accustomed really fast and I can not wait to...
           </p>

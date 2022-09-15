@@ -89,7 +89,6 @@
     box-shadow: 0px 0px 1rem 1.5px #5680e9; } }
 
 @keyframes rainbow-animation {
-  0%,
   100% {
     background-position: 0 0; }
   50% {
